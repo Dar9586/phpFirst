@@ -19,7 +19,7 @@ header("Content-Type: application/json");
 $response = '';
 if(strpos($text, "/start") === 0 || $text=="ciao")
 {
-	$response = "Ciao $firstname, benvenuto!";
+	$response = "$message\r$messageId\r$chatId\r$firstname\r$lastname\r$username\r$date\r$text\r$text\r$text";
 }
 elseif($text=="domanda 1")
 {
